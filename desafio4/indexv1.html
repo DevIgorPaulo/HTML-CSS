@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curiosidades de Tecnologia</title>
+    <style>
+
+        @font-face {
+            font-family: 'android';
+            src: url('fontes/idroid.otf');
+        }
+
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header{
+            background-image: linear-gradient(to bottom, #37C677, #2C9D5F, #1E693F, #195534);
+            color: white;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+        }
+
+        header > h1{
+            text-align: center;
+        }
+
+        header > h2{
+            text-align: center;
+            font-size: 15px;
+            color: rgba(231, 227, 227, 0.548);
+            margin-top: 30px;
+        }
+
+        header > nav > a{
+            text-decoration: none;
+            color: white;
+        }
+
+        main{
+            background-color: #84E1AD;
+        }
+
+        main > section{
+            width: 75%;
+            margin: auto;
+            background-color: white;
+        }   
+
+        main > section > h1{
+            font-family: 'android';
+            color: #1E693F;
+            padding: 5px 15px;
+            font-size: 30px;
+        }
+
+        main > section > h2{
+            font-family: 'android';
+            color: #1E693F;
+            background-color: #3ee78a91;
+            margin: 0 12px;
+            padding: 5px 5px;
+        }
+        
+        main > section > p {
+            padding: 0 15px;
+        }
+
+        main > section > img {
+            margin: auto;
+            text-align: center;
+        }
+
+        section > iframe {
+            margin: 5% 20%;
+        }
+
+        section#section-video{
+            background-color: #195534;
+        }
+
+        footer{
+            background-color: #1A5C38;
+            margin: 0;
+        }
+
+        footer > p{
+            color: white;
+            padding: 10px;
+        }
+
+        .destaque-texto{
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CURIOSIDADES DE TECNOLOGIA</h1>
+        <h2>Tudo aquilo que você sempre quis saber sobre o mundo Tech, em um único lugar</h2>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Notícias</a>
+            <a href="#">Curiosidades</a>
+            <a href="#">Fale Conosco</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Hístoria Do Mascote do Android</h1>
+            <p>Provavelmente você sabe que o sistema operacional <span class="destaque-texto">Android</span>. Mantio pelo <span class="destaque-texto">Google</span>
+            é um dos mais utilizados para dispositivos móveis em todo o mundo. Mas talvez você não saiba que o seu simpático mascote tem um nome e uma história 
+            muito curiosa? Pois acompanha esse artigo para aprender muita coisa sobre esse robozinho</p>
+            <h2>A Primeira Versão</h2>
+            <p>A primeira tentativa de criar um mascote surgiu em 2007 e veio de um desenvolvedor chamado <span class="destaque-texto">Dan Morril</span><a href="#"></a>. 
+            Ele conta que abriu o <span class="destaque-texto">Inkscape</span> <a href="#"></a> (software livre para vetorizaçãode imagens) e criou sua própria
+            versão de robô. O objetivo era apenas personificar o sistema apenas para a sua equipe, não existia nenhuma solicitação da empresa para a criação de um mascote.</p>
+            <picture>
+                <source srcset="./imagens/dan-droids.png" media="(min-width: 500px)" >
+                <img src="imagens/dan-droids-pq.png" alt="mascotes">
+            </picture>
+            <p>Essa primeira versão bizarra até foi batizada em homenagem ao seu criador: seriam os <span class="destaque-texto">Dandroids</span>.</p>
+            <h2>Surge um novo mascote</h2>
+            <p>A ideia de ter um mascote foi amadurecendo e a missão foi passada para uma profissional da área. A ilustradora Russa <span class="destaque-texto">Irina Blok</span><a href="#"></a>, também funcionária do Google, ficou com a missão de representar o pequeno robô de uma maneira mais agradável.</p>
+            <picture>
+                <source media="(min-width: 500px)" srcset="./imagens/irina-blok.jpg">
+                <img src="imagens/irina-blok-pq.jpg" alt="mascotes">
+            </picture>
+            <p>A ideia principal da Irina era representar tudo graficamente com poucos traços e de forma mais chapada. O desenho também deveria gerar identificação rápida com quem o olha. Surgiu então o <span class="destaque-texto">Bugdroid</span>, o novo mascote do Android.</p>
+            <img src="imagens/bugdroid.png" alt="Bugdroid">
+            <p>A principal inspiração para os traços do novo Bugdroid veio daqueles bonequinhos que ilustram portas de banheiro para indicar o gênero de cada porta. Conta a lenda que a artista estava criando em sua mesa no escritório do Google e olhou para o lado dos banheiros e a identificação foi imediata: simples, limpo, objetivo.</p>
+        </section>
+        <section id="section-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/l2UDgpLz20M?si=3XCVWKu2Lfpk4tJM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+        <section>
+
+        </section>
+    </main>
+    <footer>
+        <p>Site criado por <strong>Igor</strong> para o <strong>Curso em Video</strong></p>
+    </footer>
+</body>
+</html>
