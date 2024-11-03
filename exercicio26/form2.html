@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form method="POST" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="masc" value="M"><label for="masc">Masculino</label>
+            <input type="radio" name="sexo" id="fem" value="F"><label for="fem">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="bas" id="bas"><label for="bas">Basquete</label><br>
+            <input type="checkbox" name="fut" id="fut"><label for="fut">Futbbol</label><br>
+            <input type="checkbox" name="ten" id="ten"><label for="ten">Tenis</label><br>
+            <input type="checkbox" name="vol" id="vol"><label for="vol">Volei</label><br>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Cadastro</legend>
+            <p>                
+                <label for="color">Cor: </label>
+                <input type="color" name="color" id="color">
+            </p>
+            <p>
+                <label for="nivel">nivel de satisfação: </label>
+                <input type="range" name="nivel" id="nivel" min="1" max="10" value="10"> 
+            </p>
+            <p>
+                <label for="foto">Foto: </label>
+                <input type="file" name="foto" id="foto">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
