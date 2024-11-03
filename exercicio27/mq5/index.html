@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <title>Responsividade</title>
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Meu Site</h1>
+        <span class="material-symbols-outlined" id="burger" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção</a></li>
+                <li><a href="#">Opção</a></li>
+                <li><a href="#">Opção</a></li>
+                <li><a href="#">Opção</a></li>
+                <li><a href="#">Opção</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eum qui veniam deleniti aut rerum error quaerat possimus labore non sit eos tempora corrupti, consectetur nisi incidunt! Ratione, laboriosam ab!lorem Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem doloremque eum quisquam perspiciatis iste hic modi rem excepturi quos, laudantium quas possimus consectetur aperiam ipsum accusamus iure id sapiente? Aspernatur?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus blanditiis ipsum tenetur quisquam esse deserunt? Atque ipsum cum explicabo non fugit accusamus, nihil modi nam saepe dolores sequi quos ullam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas aut vero neque tempora, nemo fugit eum culpa illum quidem error possimus eveniet beatae excepturi, quos, iusto inventore ullam! Aliquid, delectus?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora perferendis eius fugiat provident excepturi et quae asperiores, ullam assumenda quos dicta eligendi, debitis magni id totam sed alias labore? Optio.</p>
+        </article>
+    </main>
+    <script>
+        function clickMenu(){
+            if(itens.style.display == 'block'){
+                itens.style.display = 'none'
+            }else{
+                itens.style.display = 'block'
+            }
+        }
+
+        function mudouTamanho(){
+            if(window.innerHeight >= 768){
+                itens.style.display = 'block'
+            }else{
+                itens.style.display = 'none'
+            }
+        }
+    </script>
+</body>
+</html>
